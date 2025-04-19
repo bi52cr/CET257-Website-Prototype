@@ -1,0 +1,228 @@
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #D4E3FC;
+}
+
+h1, h2, h3 {
+    color: forestgreen;
+}
+
+.top-right-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+    nav ul li {
+        display: inline;
+        margin-left: 15px;
+    }
+
+button1 {
+    margin: 5px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    button:hover {
+        opacity: 0.8;
+    }
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Aligns items vertically in the center */
+}
+
+.text-content {
+    flex: 1; /* Allows the text container to grow and take up remaining space */
+    padding-right: 20px; /* Adds spacing between the text and the image */
+}
+
+img {
+    flex-shrink: 0; /* Prevents the image from shrinking */
+    max-width: 400px;
+    max-height: 300px;
+}
+
+.section-container {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.info-blocks {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.info-block {
+    margin-bottom: 30px;
+    margin-right: 20px;
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+}
+.icon i {
+    font-size: 24px; 
+    margin-bottom: 10px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Aligns items vertically in the center */
+}
+
+.testimonial-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Adjust based on your layout */
+    margin: auto;
+}
+
+.testimonial-slide {
+    display: none; /* Hide all slides by default */
+    text-align: center;
+    padding: 20px;
+}
+
+
+.author {
+    font-style: italic;
+    color: #555;
+}
+
+button {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    transition: 0.6s ease;
+    
+}
+
+    button:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+    button:first-of-type {
+        left: 0;
+    }
+
+    button:last-of-type {
+        right: 0;
+    }
+
+.subscribe-section {
+    background-color: #f1f1f1; /* Light grey background */
+    padding: 20px;
+    text-align: center; /* Centers the text */
+    width: 80%;
+    margin: 20px auto; /* Center the div */
+}
+
+    .subscribe-section h2 {
+        color: #333; /* Dark grey text for the header */
+    }
+
+    .subscribe-section p {
+        color: #666; /* Lighter text for the paragraph */
+        margin-bottom: 20px;
+    }
+
+    .subscribe-section form {
+        display: flex;
+        justify-content: center;
+        gap: 10px; /* Adds space between form elements */
+    }
+
+    .subscribe-section input[type="email"],
+    .subscribe-section input[type="text"] {
+        padding: 10px;
+        border: 1px solid #ccc; /* Light grey border */
+        border-radius: 5px; /* Rounded corners */
+    }
+
+    .subscribe-section button1 {
+        padding: 10px 20px;
+        background-color: #4CAF50; /* Bootstrap primary blue */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        .subscribe-section button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+
+.download-app-section {
+    background-color: #D4E3FC;
+    padding: 20px;
+    text-align: center;
+}
+
+    .download-app-section h2, .download-app-section p {
+        color: #333;
+    }
+
+.app-buttons a, .social-media-links a {
+    display: inline-block;
+    background-color: #555;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+    .app-buttons a:hover, .social-media-links a:hover {
+        background-color: #0056b3;
+    }
+
+.button.instagram {
+    background-color: #C13584;
+}
+
+.button.facebook {
+    background-color: #3b5998;
+}
+
+.button.twitter {
+    background-color: midnightblue;
+}
+
+
+footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+
+

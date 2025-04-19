@@ -1,0 +1,43 @@
+﻿@page
+@model CYBERNORTH.Pages.SignUpModel
+@{
+    ViewData["Title"] = "Create Student Account";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link href="~/css/login.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Student Sign Up</h2>
+        <p>Create a New Student Account Below</p>
+        <form method="post" action="/submit-your-signup-form">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" required placeholder="email@address.com">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+            <div class="checkbox">
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Remember me</label>
+            </div>
+
+            <button type="submit">Create Account</button>
+
+
+        </form>
+        <div class="account-info">
+            <p>Already have an account? <a href="/login">Log in</a></p>
+        </div>
+    </div>
+</body>
+</html>

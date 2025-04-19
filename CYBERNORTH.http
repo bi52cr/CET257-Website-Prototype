@@ -1,0 +1,6 @@
+@CYBERNORTH_HostAddress = http://localhost:5120
+
+GET {{CYBERNORTH_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,22 @@
+﻿@page
+@model ErrorModel
+@{
+    ViewData["Title"] = "Video";
+    }
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Page</title>
+    <link href="~/css/site.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h1>Watch Our Video</h1>
+    <video controls width="700">
+        <source src="~/images/cyberNorth.mp4" type="video/mp4">
+        <source src="path_to_your_video.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+</body>
+</html>

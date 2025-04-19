@@ -1,0 +1,177 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberNorth - Empowering Cyber Futures</title>
+    <link href="~/css/site.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <header class="top-right-header">
+        <nav>
+            <ul>
+                <li><a href="#about">About CyberNorth</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content-container" id="About">
+        <div class="text-content">
+            <h1>Empowering Cyber Futures in the North East</h1>
+            <p>CyberNorth is dedicated to forging strong connections between students and the vibrant cyber security sector in the North East. Our mission is to open doors to cutting-edge opportunities and cultivate the essential skills needed to excel in this rapidly evolving industry, thereby strengthening the regional cyber security ecosystem and keeping talent in the North East.</p>
+            <div>
+                <button1 onclick="location.href='@Url.Page("login")'">GET STARTED</button1>
+               <button1 onclick="location.href='@Url.Page("Video")'">Watch Video</button1>
+            </div>
+        </div>
+        <img src="~/images/cybernorth_uk_logo.jpg" alt="Cyber Security Network" style="width: 400px; height: 270x;">
+    </div>
+
+    <div class="section-container" id="features">
+        <div class="info-blocks">
+            <div class="info-block">
+                <div class="icon"><i class="fa fa-check"></i></div>
+                <h2>Research Insights</h2>
+                <p>Unlock the findings of our comprehensive study into student engagement within the cyber security field. Discover the main barriers students face and explore our innovative proposals for bridging the gap. This section provides a deep dive into what keeps students from connecting with cyber opportunities and how we can collectively overcome these challenges.</p>
+            </div>
+            <div class="info-block">
+                <div class="icon"><i class="fa fa-calendar"></i></div>
+                <h2>Join Our Events</h2>
+                <p>Stay updated and get involved with our array of engaging events tailored for aspiring cyber professionals. From workshops that hone your technical skills to seminars led by industry leaders, our events provide invaluable networking opportunities and insights into the latest in cyber security. Check out our calendar and register for upcoming events today!</p>
+            </div>
+            <div class="info-block">
+                <div class="icon"><i class="fa fa-star"></i></div>
+                <h2>Explore Careers</h2>
+                <p>Kickstart your career in cyber security with our dedicated job board. Whether you're looking for internships, part-time positions, or full-time roles, we connect you with top employers in the North East looking for fresh talent. Browse the latest job listings and apply directly through our portal to step into the future of cyber security.</p>
+            </div>
+            </div>
+    </div>
+        <div class="main-content">
+        <div class="text-content">
+        <h1>Connecting You to the Heart of Cyber Security in the North East</h1>
+            <p>CyberNorth is the nexus for aspiring cyber professionals in the North East. By engaging with us, students can directly benefit from a wealth of resources tailored to launch and advance careers in cyber security. We provide unparalleled networking opportunities, allowing you to connect with leading industry experts and peers who are equally passionate about this dynamic field. Our dedicated career guidance helps you navigate the complexities of the cyber security industry, from choosing the right educational path to landing your dream job. Additionally, our members gain exclusive access to workshops, seminars, and real-world projects that are not only enriching but also vital in staying ahead in the fast-evolving cyber landscape. Join CyberNorth to transform your potential into expertise and become part of a community committed to securing the digital future.</p>
+           </div>
+            <img src="~/images/cyber_network.jpg" alt="Cyber Security Network" style="width: 900px; height: 900px;">
+        </div>
+
+        <div class="main-content">
+        <div class="text-content">
+        <h1>Students Section</h1>
+            <p>A library of free or affordable resources (e.g., beginner guides, ethical hacking tutorials, certification prep materials).
+Curated content on topics students are most interested in: ethical hacking, AI security, and cloud security (based on survey feedback).
+Develop a dedicated section with filters for roles based on skills, experience levels, and location to streamline job searching, and provide a guide to help students begin their journey.
+Use videos, infographics, and interactive visuals to explain cybersecurity concepts, career paths, and event details.
+Include student testimonials or short success story videos.
+</p>
+           </div>
+            <img src="~/images/cyber_network.jpg" alt="Cyber Security Network" style="width: 900px; height: 900px;">
+        </div>
+
+    
+    <div class="testimonial-container" id="testimonials">
+        <button onclick="plusSlides(-1)">&#10094;</button>
+        <div class="testimonial-slide">
+            <p>"CyberNorth has been instrumental in shaping my career path in cybersecurity. The workshops and networking events provided me with invaluable connections and real-world insights that are not taught in the classroom. I'm truly grateful for the opportunities to engage directly with industry leaders."</p>
+            <img src="~/images/emily.png">
+            <p class="author">Emily Roberts NewCastle University</p>
+        </div>
+
+        <div class="testimonial-slide">
+            <p>"Participating in CyberNorth's initiatives dramatically enriched my learning experience. The practical cybersecurity challenges and mentorship sessions not only enhanced my technical skills but also boosted my confidence. I secured my first job in the industry thanks to the exposure and connections I gained through CyberNorth"</p>
+            <img src="~/images/anna lee.jpg">
+            <p class="author"> Anna Lee, Graduate of Durham University</p>
+        </div>
+
+        <div class="testimonial-slide">
+            <p>"CyberNorth has been a pivotal part of my educational journey. The guest lectures and real-world cybersecurity scenarios provided a deeper understanding that you don't get from textbooks alone. My involvement in their events opened doors to internships and eventually a full-time position with one of the top tech firms."</p>
+            <img src="~/images/mark.jpg">
+            <p class="author">Mark Thompson, Northumbria University Alum</p>
+        </div>
+        <button onclick="plusSlides(1)">&#10095;</button>
+    </div>
+
+     <script>
+                 let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("testimonial-slide");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "block";
+        }
+     </script>
+
+
+    <div class="subscribe-section">
+        <h2>Connect with CyberNorth</h2>
+        <p>Join our community to stay updated on the latest in cyber security education and career opportunities in the North East. Subscribe to receive exclusive content, event notifications, and expert insights directly to your inbox.</p>
+        <form action="your-server-endpoint" method="POST">
+            <input type="email" name="email" placeholder="Email address" required>
+            <input type="text" name="fullname" placeholder="Full name" required>
+            <button1 type="submit">Subscribe</button1>
+        </form>
+    </div>
+    <script>
+        document.querySelector('.subscribe-section form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevents the default form submission
+            const email = this.querySelector('input[name="email"]').value;
+            const fullname = this.querySelector('input[name="fullname"]').value;
+
+            // Example of sending data to a server
+            fetch('your-server-endpoint', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ email: email, fullname: fullname })
+            })
+            .then(response => response.json())
+            .then(data => alert('Thank you for subscribing!'))
+            .catch(error => console.error('Error:', error));
+        });
+    </script>
+
+
+    <div class="download-app-section" id="contact">
+        <h2>Download the CyberNorth App</h2>
+        <p>Access CyberNorth's resources on the go! Download our mobile app for the latest updates, resources, and tools to help you excel in the cyber security field. Available for free on Android and iOS.</p>
+        <div class="app-buttons">
+            <a href="https://www.apple.com/app-store/" target="_blank" class="button app-store">Download on the App Store</a>
+            <a href="https://play.google.com/store" target="_blank" class="button google-play">Get it on Google Play</a>
+        </div>
+        <div class="social-media-links">
+            <a href="https://www.instagram.com" target="_blank" class="button instagram">Instagram</a>
+            <a href="https://www.facebook.com" target="_blank" class="button facebook">Facebook</a>
+            <a href="https://www.twitter.com" target="_blank" class="button twitter">Twitter</a>
+        </div>
+    </div>
+
+
+
+
+    <footer>
+        <p>Contact CyberNorth: <a href="mailto:Danielle@cybernorth.biz">Danielle@cybernorth.biz</a></p>
+        <p>© 2025 CyberNorth. All rights reserved.</p>
+    </footer>
+</body>
+</html>
